@@ -4,7 +4,7 @@
 $ErrorActionPreference = "Stop"
 
 $RepoUrl = "https://raw.githubusercontent.com/carolyn-sun/chinese-writing-kit/main"
-$TargetDir = ".github"
+$TargetDir = ".github/instructions"
 $TargetFile = "chinese-writing-kit.instructions.md"
 
 Write-Host "📝 Chinese Writing Kit" -ForegroundColor Cyan

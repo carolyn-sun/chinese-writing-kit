@@ -6,7 +6,7 @@
 set -e
 
 REPO_URL="https://raw.githubusercontent.com/carolyn-sun/chinese-writing-kit/main"
-TARGET_DIR=".github"
+TARGET_DIR=".github/instructions"
 TARGET_FILE="chinese-writing-kit.instructions.md"
 
 echo "📝 Chinese Writing Kit"

@@ -24,8 +24,8 @@ irm https://raw.githubusercontent.com/carolyn-sun/chinese-writing-kit/main/init.
 
 ### 手动安装
 
-1. 将 `chinese-writing-kit.instructions.md` 文件复制到你的代码库根目录下的 `.github` 文件夹中（如果没有该文件夹，请先创建）。
-2. 确保文件路径为 `.github/chinese-writing-kit.instructions.md`。
+1. 将 `chinese-writing-kit.instructions.md` 文件复制到你的代码库根目录下的 `.github/instructions` 文件夹中（如果没有该文件夹，请先创建）。
+2. 确保文件路径为 `.github/instructions/chinese-writing-kit.instructions.md`。
 3. 提交并推送到你的代码库。
 
 更多信息请参考 [Adding repository custom instructions for GitHub Copilot](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot)。
