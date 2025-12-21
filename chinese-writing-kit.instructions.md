@@ -171,13 +171,11 @@ applyTo: '**/*.md, **/*.mdx'
    - ✓ 文章标题为「How to Learn Programming」。
    - ✓ 安装 Visual Studio Code 编辑器。
 
-6. 链接与前后文字的空格规则取决于链接文字的首尾字符，链接内部内容仍遵循中英文混排规则。
-   - 链接文字以英文开头或结尾时，与相邻中文之间加空格。
-   - 链接文字以中文开头或结尾时，与相邻中文之间不加空格。
+6. 链接与前后中文之间始终加空格，链接内部内容仍遵循中英文混排规则。
    - ✓ 请访问 [GitHub](https://github.com) 获取更多信息。
-   - ✓ 更多信息请参考[文档](https://example.com)。
-   - ✓ 这是 [VS Code 编辑器](https://code.visualstudio.com)的官网。
-   - ✓ 详见「[使用指南](https://example.com)」。
+   - ✓ 更多信息请参考 [文档](https://example.com)。
+   - ✓ 这是 [VS Code 编辑器](https://code.visualstudio.com) 的官网。
+   - ✓ 详见「[使用指南](https://example.com)」。（链接紧邻标点时，标点侧不加空格）
 
 7. 英文标点与中文之间不加空格，使用英文标点后按英文规则处理。
    - ✓ 他说「Hello, World!」是编程入门的第一课。
