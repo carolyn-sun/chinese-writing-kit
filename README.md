@@ -63,25 +63,20 @@ name: Setup Chinese Writing Kit
 
 on:
   schedule:
-    - cron: '0 0 1,15 * *' # 每两周运行一次 (每月 1 号和 15 号)
+    - cron: "0 0 1,15 * *" # 每两周运行一次 (每月 1 号和 15 号)
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
   setup:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - name: Copy Instructions
         uses: carolyn-sun/chinese-writing-kit@main
-      - name: Commit and Push
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .github/instructions/chinese-writing-kit.instructions.md
-          git commit -m "chore: sync chinese writing kit instructions" || echo "No changes to commit"
-          git push
 ```
 
 ### 注意事项
