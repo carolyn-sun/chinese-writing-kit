@@ -1,21 +1,30 @@
-name: 'Chinese Writing Kit Setup'
-description: 'Copies the Chinese Writing Kit instructions into your repository.'
-author: 'carolyn-sun'
+name: "Chinese Writing Kit Setup"
+description: "Copies the Chinese Writing Kit instructions into your repository."
+author: "carolyn-sun"
 
 runs:
-  using: 'composite'
+  using: "composite"
   steps:
     - name: Copy Instructions
       run: |
         TARGET_DIR=".github/instructions"
         TARGET_FILE="chinese-writing-kit.instructions.md"
-        
+
         echo "📁 Creating $TARGET_DIR directory..."
         mkdir -p "$TARGET_DIR"
-        
+
         echo "⬇️  Copying $TARGET_FILE from action..."
         cp "${{ github.action_path }}/chinese-writing-kit.instructions.md" "$TARGET_DIR/$TARGET_FILE"
-        
+
         echo "✅ Installation successful!"
         echo "File saved to: $TARGET_DIR/$TARGET_FILE"
+      shell: bash
+
+    - name: Commit and Push
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .github/instructions/chinese-writing-kit.instructions.md
+        git commit -m "chore: sync chinese writing kit instructions" || echo "No changes to commit"
+        git push
       shell: bash
