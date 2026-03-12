@@ -1,6 +1,6 @@
 ---
 description: "This file helps you unify the writing style for Chinese text in your project."
-applyTo: "**/*.md, **/*.mdx"
+applyTo: "**/*.md, **/*.mdx, **/*.txt, **/*.astro"
 ---
 
 # Chinese Writing Kit Instructions
