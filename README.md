@@ -74,7 +74,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Copy Instructions
         uses: carolyn-sun/chinese-writing-kit@main
 ```
